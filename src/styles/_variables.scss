@@ -1,9 +1,2 @@
-@mixin color($color) {
-  background: $color;
-}
-
-button {
-  border: none;
-  @include color(lightblue);
-}
-$text-color: #222222;
+$primary-color: #ffffff;
+$secondary-color: #ac4242;
