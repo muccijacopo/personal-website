@@ -5,6 +5,8 @@
 
 @import "@icon/themify-icons/themify-icons.css";
 
+$card-color: #29353c;
+
 body {
   background: #dcdcdc;
   background: linear-gradient(75deg, #475b68, #33424b);
@@ -22,15 +24,12 @@ body {
     width: 100%;
     max-width: 450px;
     text-align: center;
-    background: rgba(#29353c, 0.6);
+    background: rgba($card-color, 0.6);
     color: #ffffff;
     border-radius: 10px;
     padding: 3rem 1rem;
     box-shadow: 0px 3px 20px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s;
-    &:hover {
-      // transform: rotateX(-10deg);
-    }
     .card-body {
       height: 100%;
       h1 {
@@ -46,19 +45,23 @@ body {
         height: auto;
         margin: 0 auto 20px auto;
         border-radius: 50%;
-        border: 3px solid white;
       }
       .icons {
         width: 30%;
-        height: 30px;
-        margin: $margin auto;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        .ti {
+        a {
           @extend .cursor-pointer;
-          font-size: 1.5rem;
-          color: $primary-color;
+          transition: all 0.5s;
+          &:hover {
+            transform: scale(1.1);
+          }
+          .ti {
+            font-size: 1.5rem;
+            color: $primary-color;
+          }
         }
       }
       button {
@@ -70,15 +73,10 @@ body {
         font-size: 1.2rem;
         width: 200px;
         margin: 0 auto;
-        transition: background-color ease-in-out 0.5s;
+        transition: background-color ease-in-out 0.3s;
         &:hover {
           background: $primary-color;
-          a {
-            color: #33424b;
-          }
-        }
-        a {
-          color: white;
+          color: $card-color;
         }
       }
     }
