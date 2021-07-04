@@ -1,1 +1,0 @@
-{"version":3,"sources":["app/app.js"],"names":["getHello","console","log"],"mappings":";AAAO,aAAA,OAAA,eAAA,QAAA,aAAA,CAAA,OAAA,IAAA,QAAA,cAAA,EAAA,IAAMA,EAAW,WAAMC,OAAAA,QAAQC,IAAI,aAAnC,QAAA,SAAA","file":"app.d0e9d5ed.js","sourceRoot":"../src","sourcesContent":["export const getHello = () => console.log(\"Hello!!!\");\n"]}

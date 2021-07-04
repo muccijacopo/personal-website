@@ -1084,7 +1084,7 @@
 }
 
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 h1,
 h2,
 h3,
@@ -1101,11 +1101,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", serif;
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* Flex Utils */
@@ -1197,8 +1197,8 @@ body {
   border-radius: 50%;
 }
 .container .card .card-body .icons {
-  width: 30%;
   margin: 0 auto;
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -1209,7 +1209,8 @@ body {
 .container .card .card-body .icons a:hover {
   transform: scale(1.1);
 }
-.container .card .card-body .icons a .ti {
+.container .card .card-body .icons a span::before {
+  line-height: 100%;
   font-size: 1.5rem;
   color: #ffffff;
 }
