@@ -47,18 +47,20 @@ body {
         border-radius: 50%;
       }
       .icons {
-        width: 30%;
         margin: 0 auto;
+        width: 150px;
         display: flex;
         align-items: center;
         justify-content: space-around;
         a {
+          // margin: 0 5px;
           @extend .cursor-pointer;
           transition: all 0.5s;
           &:hover {
             transform: scale(1.1);
           }
-          .ti {
+          span::before {
+            line-height: 100%;
             font-size: 1.5rem;
             color: $primary-color;
           }
